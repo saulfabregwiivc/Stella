@@ -42,7 +42,7 @@ ifneq ($(platform), osx)
    endif
 endif
 
-TARGET_NAME = stella2023
+TARGET_NAME = stella
 
 ifeq (,$(findstring msvc,$(platform)))
    CXXFLAGS += -std=c++17 -fno-rtti
