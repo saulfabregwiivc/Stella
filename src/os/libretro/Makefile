@@ -291,7 +291,7 @@ else ifneq (,$(filter $(platform), ngc wii wiiu))
 
    # Nintendo WiiU
    ifneq (,$(findstring wiiu,$(platform)))
-      CXXFLAGS += -mwup
+      CXXFLAGS += -ffunction-sections -fdata-sections -D__wiiu__ -D__wut__
    # Nintendo Wii
    else ifneq (,$(findstring wii,$(platform)))
       CXXFLAGS += -DGEKKO -mrvl
